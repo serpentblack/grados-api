@@ -33,6 +33,6 @@ public class GradosController {
 
     @GetMapping("/ping")
         public String ping() {
-        return "pong";
+        return "Mensaje de respuesta";
     }
 }
