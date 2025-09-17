@@ -1,8 +1,13 @@
-name: Deploy a Render (al crear tag)
+name: Deploy a Render (por rama main)
 
 on:
   push:
-    tags: [ "v*" ]
+    branches: [ "main" ]
+
+# (opcional) evita despliegues en paralelo
+concurrency:
+  group: render-deploy
+  cancel-in-progress: false
 
 jobs:
   deploy:
