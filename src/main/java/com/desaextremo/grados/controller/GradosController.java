@@ -30,9 +30,4 @@ public class GradosController {
     public double kelvinACentigrados(@PathVariable("grades") double k) {
         return k - 273.15;
     }
-
-    @GetMapping("/ping")
-        public String ping() {
-        return "Mensaje de respuesta";
-    }
 }
