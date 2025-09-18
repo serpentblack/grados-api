@@ -33,7 +33,7 @@ public class GradosController {
 
     @GetMapping("/ping")
     public String ping() {
-        return "Ahora te devolvere pong...";
+        return "Este es un mensaje de prueba...";
     }
 
 }
