@@ -36,4 +36,15 @@ public class GradosController {
         return "Este es un mensaje de prueba...";
     }
 
+    @GetMapping("/tabla/{numero}")
+    public String tabla(@PathVariable("numero") int numero) {
+
+        String salida = "Tabla de Multiplicar del numero " + numero + "\n";
+
+        for (int i = 1; i <=10; i++) {
+            salida += numero + " x " + i + " = " + (numero * i) + "\n";
+        }
+
+        return salida;
+    }
 }
