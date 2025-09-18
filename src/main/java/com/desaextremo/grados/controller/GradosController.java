@@ -15,4 +15,9 @@ public class GradosController {
         public String ping() {
         return "Mensaje de respuesta";
     }
+
+    @GetMapping("/centtofahr/{grades}")
+    public double centigradosAFahrenheit(@PathVariable("grades") double c) {
+        return (c * 9.0 / 5.0) + 32.0;
+    }
 }
